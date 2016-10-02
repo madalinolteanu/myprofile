@@ -1,0 +1,2 @@
+COPY "E:\Git Repository\myprofile\myprofile-ui\target\myprofile-ui-1.0-SNAPSHOT.jar"    "E:\Tools\apache-karaf-4.0.7\apache-karaf-4.0.7\deploy"
+COPY "E:\Git Repository\myprofile\myprofile-rest\target\myprofile-rest-1.0-SNAPSHOT.jar"    "E:\Tools\apache-karaf-4.0.7\apache-karaf-4.0.7\deploy"
