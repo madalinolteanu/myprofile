@@ -22,11 +22,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="true" />
+        <module name="myprofile-rest" />
         <module name="myprofile-ui" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="myprofile" target="1.5" />
+      <module name="myprofile-rest" target="1.5" />
       <module name="myprofile-ui" target="1.5" />
     </bytecodeTargetLevel>
   </component>
