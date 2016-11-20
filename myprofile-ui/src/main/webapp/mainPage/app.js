@@ -1,3 +1,12 @@
-'use strict'
+'use strict';
 
-var app = angular.module("app",["ngRoute"]);
+var myApp = angular.module("myApp",[
+    'ngRoute',
+    'ui.bootstrap',
+    'login'
+]);
+
+myApp.controller("myController",['$scope',function ($scope){
+
+    $scope.message = "This is Madalin";
+}]);

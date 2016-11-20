@@ -1,0 +1,34 @@
+<div ng-app="login">
+    <div  ng-controller="loginController" class="label">
+        <label>{{loginMessage}}</label>
+
+        <table>
+            <tr>
+                <td>
+                    <label id="loginName" >{{name}}</label>
+                </td>
+                <td>
+                    <input type="text" placeholder="Scrie numele in ***">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label id="loginPasswrod">{{password}}</label>
+
+                </td>
+                <td>
+                    <input type="password" placeholder="Scrie parola in ***">
+                </td>
+            </tr>
+        </table>
+
+        <br>
+
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
+    <script src="login.js"></script>
+</div>

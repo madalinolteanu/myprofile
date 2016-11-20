@@ -1,10 +1,25 @@
 <html>
-<body>
-<div class="title">
-    <label>
-        <h4 style="color : red; text-align: center; height: 200px ">Madalin Olteanu</h4>
-    </label>
-</div>
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body ng-app="myApp" class="body">
+<div class="container" id="mainDiv" >
+        <h1 class="title">Welcome</h1>
+        <div class="description" ng-controller="myController" style="font-size: 150%">{{message}}</div>
+        <div>
+            <object type="text/html" data="loginPage/login.html"></object>
+        </div>
 
+</div>
 </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
+<script src="app.js"></script>
+<script src="loginPage/login.js"></script>
 </html>
