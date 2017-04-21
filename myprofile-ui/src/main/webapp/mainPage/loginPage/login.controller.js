@@ -1,16 +1,18 @@
-'use strict';
+define(['../mainPage'], function(loginControllers){
+    'use strict';
 
-login.controller('loginController',['$scope',function($scope){
+    loginControllers.controller('loginCtrl',['$scope',function($scope){
 
-    $scope.name = "Name:";
-    $scope.password = "Password:";
-    $scope.loginMessage = "Simple login page";
-    $scope.passwordPlaceholder = "Type Password";
-    $scope.namePlaceholder = "Type Name";
-    $scope.loginButton = "Login";
+        $scope.name = "Name:";
+        $scope.password = "Password:";
+        $scope.loginMessage = "Simple login page";
+        $scope.passwordPlaceholder = "Type Password";
+        $scope.namePlaceholder = "Type Name";
+        $scope.loginButton = "Login";
 
-    $scope.login = function (){
+        $scope.login = function (){
 
-        alert($scope.loginName, $scope.loginPassword);
-    }
-}]);
+            alert($scope.loginName, $scope.loginPassword);
+        }
+    }]);
+});

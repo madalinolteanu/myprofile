@@ -1,14 +1,14 @@
-<div ng-app="login">
-    <div  ng-controller="loginController" class="label">
+<div ng-controller="loginCtrl">
+    <div class="label">
         <label>{{loginMessage}}</label>
-
         <table>
             <tr>
                 <td>
                     <label>{{name}}</label>
                 </td>
                 <td>
-                    <input id="loginName" type="text" placeholder="{{namePlaceholder}}" ng-model="loginName">
+                    <input id="loginName" type="text" class="form-control"
+                           placeholder="{{namePlaceholder}}" ng-model="loginName">
                 </td>
             </tr>
             <tr>
@@ -16,18 +16,14 @@
                     <label>{{password}}</label>
                 </td>
                 <td>
-                    <input id="loginPassword" type="password" placeholder="{{passwordPlaceholder}}" ng-model="loginPassword">
+                    <input id="loginPassword" type="password" class="form-control" placeholder="{{passwordPlaceholder}}"
+                           ng-model="loginPassword">
                 </td>
             </tr>
         </table>
-        <button type="submit" ng-click="login()" class="form-control">{{loginButton}}</button>
+        <div>
+            <button type="submit" ng-click="login()" class="form-control">{{loginButton}}</button>
+        </div>
         <br>
-
-
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/2.2.0/ui-bootstrap-tpls.min.js"></script>
-    <script src="login.js"></script>
 </div>

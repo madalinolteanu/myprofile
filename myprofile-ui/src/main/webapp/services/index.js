@@ -7,5 +7,5 @@
  * 'config' constants object.
  */
 define([
-
+    './indexService'
 ], function () {});

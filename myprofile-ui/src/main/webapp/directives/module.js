@@ -1,7 +1,10 @@
 /**
  * Created by Madalin on 4/21/2017.
- */
-define(['angular'], function(ng){
+ * attach directives to this module
+ * if you get 'unknown {x}Provider' errors from angular, be sure they are
+ * properly referenced in one of the module dependencies in the array.
+ **/
+define(['angular'], function (ng) {
     'use strict';
-    return ng.model('app.directives',[]);
+    return ng.module('app.directives', []);
 });
