@@ -5,23 +5,22 @@
         <table>
             <tr>
                 <td>
-                    <label id="loginName" >{{name}}</label>
+                    <label>{{name}}</label>
                 </td>
                 <td>
-                    <input type="text" placeholder="Scrie numele in ***">
+                    <input id="loginName" type="text" placeholder="{{namePlaceholder}}" ng-model="loginName">
                 </td>
             </tr>
             <tr>
                 <td>
-                    <label id="loginPasswrod">{{password}}</label>
-
+                    <label>{{password}}</label>
                 </td>
                 <td>
-                    <input type="password" placeholder="Scrie parola in ***">
+                    <input id="loginPassword" type="password" placeholder="{{passwordPlaceholder}}" ng-model="loginPassword">
                 </td>
             </tr>
         </table>
-
+        <button type="submit" ng-click="login()" class="form-control">{{loginButton}}</button>
         <br>
 
 
